@@ -9,7 +9,7 @@
  * @return {boolean} - True if the user input is valid, false otherwise
  */
 function checkIsValidUserInput(userInput) {
-  if (Number.isNaN(Number(userInput)) || userInput.length !== 4) {
+  if (!/^\d{4}$/.test(userInput)) {
     return false;
   }
 
